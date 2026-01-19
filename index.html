@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高嘻嘻资源站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .header {
+            background: #2c3e50;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .tagline {
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+        
+        .search-box {
+            margin: 2rem auto;
+            max-width: 500px;
+            padding: 0 1rem;
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #ddd;
+            border-radius: 30px;
+            font-size: 1rem;
+            outline: none;
+        }
+        
+        .search-box input:focus {
+            border-color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        .section-title {
+            font-size: 1.2rem;
+            margin: 2rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #3498db;
+        }
+        
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .category {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .category:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+        
+        .category-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resources {
+            display: grid;
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+        
+        .resource {
+            background: white;
+            padding: 1rem;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .resource-info {
+            flex: 1;
+        }
+        
+        .resource-title {
+            font-weight: bold;
+            margin-bottom: 0.3rem;
+        }
+        
+        .resource-meta {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        .download-btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 3px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .footer p {
+            margin: 0.5rem 0;
+            font-size: 0.9rem;
+            color: #95a5a6;
+        }
+        
+        @media (max-width: 768px) {
+            .categories {
+                grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .categories {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="logo">高嘻嘻资源站</div>
+        <div class="tagline">简洁 · 高效 · 免费</div>
+    </div>
+
+    <!-- 搜索框 -->
+    <div class="search-box">
+        <input type="text" placeholder="搜索资源...">
+    </div>
+
+    <!-- 主要内容 -->
+    <div class="container">
+        <!-- 分类 -->
+        <div class="section-title">资源分类</div>
+        <div class="categories">
+            <a href="#" class="category">
+                <div class="category-icon">📱</div>
+                <div>软件工具</div>
+            </a>
+            <a href="#" class="category">
+                <div class="category-icon">🎨</div>
+                <div>设计素材</div>
+            </a>
+            <a href="#" class="category">
+                <div class="category-icon">🎬</div>
+                <div>影视资源</div>
+            </a>
+            <a href="#" class="category">
+                <div class="category-icon">📚</div>
+                <div>教程文档</div>
+            </a>
+            <a href="#" class="category">
+                <div class="category-icon">🎵</div>
+                <div>音乐资源</div>
+            </a>
+            <a href="#" class="category">
+                <div class="category-icon">📱</div>
+                <div>手机应用</div>
+            </a>
+        </div>
+
+        <!-- 热门资源 -->
+        <div class="section-title">热门资源</div>
+        <div class="resources">
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">Photoshop 2024 中文版</div>
+                    <div class="resource-meta">大小: 2.8GB | 下载: 12540次 | 更新: 2024-03-15</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+            
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">Python学习资料大全</div>
+                    <div class="resource-meta">大小: 850MB | 下载: 8920次 | 更新: 2024-03-12</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+            
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">PPT模板合集</div>
+                    <div class="resource-meta">大小: 1.2GB | 下载: 7450次 | 更新: 2024-03-10</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+            
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">字体包合集</div>
+                    <div class="resource-meta">大小: 650MB | 下载: 6210次 | 更新: 2024-03-08</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+        </div>
+
+        <!-- 最新资源 -->
+        <div class="section-title">最新资源</div>
+        <div class="resources">
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">办公软件套装</div>
+                    <div class="resource-meta">大小: 1.5GB | 下载: 320次 | 更新: 今天</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+            
+            <div class="resource">
+                <div class="resource-info">
+                    <div class="resource-title">图标素材包</div>
+                    <div class="resource-meta">大小: 320MB | 下载: 210次 | 更新: 昨天</div>
+                </div>
+                <button class="download-btn">下载</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>高嘻嘻资源站 © 2024</p>
+        <p>本站所有资源仅供学习交流使用</p>
+        <p>如有问题请联系: admin@gaoxixi.com</p>
+    </div>
+
+    <script>
+        // 搜索功能
+        document.querySelector('input').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                const query = this.value;
+                if (query.trim()) {
+                    alert(`正在搜索: ${query}\n搜索功能开发中...`);
+                }
+            }
+        });
+        
+        // 下载按钮点击
+        document.querySelectorAll('.download-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const resourceTitle = this.closest('.resource').querySelector('.resource-title').textContent;
+                alert(`开始下载: ${resourceTitle}\n下载功能开发中...`);
+            });
+        });
+        
+        // 分类点击
+        document.querySelectorAll('.category').forEach(category => {
+            category.addEventListener('click', function(e) {
+                e.preventDefault();
+                const categoryName = this.querySelector('div:last-child').textContent;
+                alert(`跳转到: ${categoryName}\n分类页面开发中...`);
+            });
+        });
+    </script>
+</body>
+</html>
